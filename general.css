@@ -1,0 +1,80 @@
+        body {
+            font-family: 'Courier Prime', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 130vh;
+            position: relative;
+        }
+        .receipt-container {
+            position: relative;
+        }
+h2 {
+  font-size: 23px;
+}
+ 
+p.center {
+  text-align: center;
+}
+ 
+        .receipt {
+            width: 300px;
+            background-color: #fff;
+            padding: 0px;
+            box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+            border-top: 20px solid #fff;
+            border-bottom: 20px solid #fff;
+            text-align: left;
+            position: relative;
+            z-index: 1;
+        }
+        .receipt h1, .receipt h2, .receipt p {
+            margin: 0;
+            padding: 5px 0;
+        }
+        .receipt .line {
+            border-bottom: 1px dashed #000;
+            margin: 10px 0;
+        }
+        .receipt img {
+            max-width: 100%;
+            margin-top: 10px;
+        }
+        .watermark {
+            position: absolute;
+            top: 12;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            pointer-events: none;
+            z-index: 0;
+        }
+        .watermark span {
+            color: red;
+            font-size: 12px;
+            opacity: 0.5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .watermark span.left {
+            transform: translateX(-23px);
+        }
+        .watermark span.right {
+            transform: translateX(23px);
+        }
+        .watermark span.left br,
+        .watermark span.right br {
+            line-height: 0.6;
+        }
+        .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+    
