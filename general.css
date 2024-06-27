@@ -77,4 +77,19 @@ p.center {
   margin-left: auto;
   margin-right: auto;
 }
-    
+
+.center-text {
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #000; /* Adjust border as needed */
+    padding: 10px; /* Optional: Add padding for better spacing */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
